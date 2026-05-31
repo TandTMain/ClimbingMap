@@ -7,7 +7,7 @@
     "description": "Hungary's first via ferrata (2013) with 5 routes (B–F difficulty) in the Kőmosó valley below Csesznek Castle.",
     "address": "Csesznek, Bakony Mountains",
     "website": "https://csesznek.kornyeke.hu/en/via-ferrata-csesznek",
-    "image": "https://picsum.photos/id/1018/400/300"
+    "image": "images/csesznek-via-ferrata.jpg"
   },
   {
     "name": "Mór Via Ferrata",
@@ -27,7 +27,7 @@
     "description": "Via ferrata routes in the scenic Kőhegy park with multiple difficulty levels and picnic areas.",
     "address": "Tatabánya, Kőhegy",
     "website": "",
-    "image": ""
+    "image": "images/tatabanya-kohegy.jpg"
   },
   {
     "name": "Esztramos Nagy-fal Via Ferrata",
@@ -67,7 +67,7 @@
     "description": "Hungary's largest indoor climbing hall with 1360 m² of walls, top rope, lead climbing, and a boulder hall.",
     "address": "1036 Budapest, Fényes Adolf u. 19-21.",
     "website": "https://www.spiderclub.hu",
-    "image": "https://picsum.photos/id/1043/400/300"
+    "image": ""
   },
   {
     "name": "Monkey Boulder",
@@ -217,7 +217,7 @@
     "description": "Natural limestone boulders on Kecske-hegy's south side with 68+ problems from easy to highball. Known as Lion Boulders.",
     "address": "Budapest II., Kecske-hegy",
     "website": "https://www.thecrag.com/en/climbing/hungary/budapest/area/4701577743",
-    "image": "https://picsum.photos/id/1015/400/300"
+    "image": "images/oroszlan-sziklak.jpg"
   },
   {
     "name": "Tündér-szikla / Manóvár",
@@ -237,7 +237,7 @@
     "description": "Popular climbing crag in a former quarry in Budapest with many sport routes across various grades.",
     "address": "Budapest III., Róka-hegy",
     "website": "",
-    "image": ""
+    "image": "images/roka-hegy.jpg"
   },
   {
     "name": "Kecske-hegyi kőfejtő",
@@ -247,7 +247,7 @@
     "description": "Historic climbing quarry where Hungarian sport climbing was born in the 1980s. Overhanging routes up to grade 10.",
     "address": "Budapest II., Kecske-hegy",
     "website": "",
-    "image": ""
+    "image": "images/kecske-hegy.jpg"
   },
   {
     "name": "Bajót (Nagy-fal)",
@@ -257,7 +257,7 @@
     "description": "Major climbing area in Gerecse with many sport routes on limestone. Includes Nagy-fal, Hátsó-fal, and Szívek-fala.",
     "address": "Bajót, Gerecse Mountains",
     "website": "",
-    "image": ""
+    "image": "images/bajot.jpg"
   },
   {
     "name": "Kis-Gerecsei kőfejtő",
@@ -277,7 +277,7 @@
     "description": "Scenic climbing valley in Bakony with multiple crags and sport routes in a forested gorge.",
     "address": "Cuha-völgy, Bakony Mountains",
     "website": "",
-    "image": ""
+    "image": "images/cuha-volgy.jpg"
   },
   {
     "name": "Bajdázói-kőfejtő (Királyrét)",
@@ -347,7 +347,7 @@
     "description": "Andesite crag in Zemplén with beautiful tower formations and sport routes.",
     "address": "Zemplén Mountains",
     "website": "",
-    "image": ""
+    "image": "images/solyom-ko.jpg"
   },
   {
     "name": "Várgesztes",
@@ -357,7 +357,7 @@
     "description": "Popular Vértes climbing crag under castle ruins with multiple sport routes.",
     "address": "Várgesztes, Vértes Mountains",
     "website": "",
-    "image": ""
+    "image": "images/vargesztes.jpg"
   },
   {
     "name": "Turul-sziklák",
@@ -407,7 +407,7 @@
     "description": "Bakony valley crag with sport routes in a quiet forested area.",
     "address": "Betekints-völgy, Bakony Mountains",
     "website": "",
-    "image": ""
+    "image": "images/betekints-volgy.jpg"
   },
   {
     "name": "Felsőtárkány",
@@ -427,7 +427,7 @@
     "description": "Climbing crag near Csókakő castle ruins in the Vértes with sport routes.",
     "address": "Csókakő, Vértes Mountains",
     "website": "",
-    "image": ""
+    "image": "images/csokako.jpg"
   },
   {
     "name": "Balatonederics",
