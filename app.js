@@ -5,6 +5,13 @@ const TYPE_CONFIG = {
   'wall':         { color: '#e67e22', label: 'Outdoor Wall' },
 };
 
+const FILTER_LABELS = {
+  'via-ferrata': 'Via Ferrata',
+  'gym':          'Climbing Gyms',
+  'boulder':      'Outdoor Boulders',
+  'wall':         'Outdoor Walls',
+};
+
 const map = L.map('map', { zoomControl: true }).setView([47.16, 19.50], 8);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -18,39 +25,17 @@ for (const type of Object.keys(TYPE_CONFIG)) {
   layerGroups[type] = L.layerGroup().addTo(map);
 }
 
-async function init() {
-  const res = await fetch('locations.json');
-  const locations = await res.json();
-
-  locations.forEach((loc) => {
-    const cfg = TYPE_CONFIG[loc.type];
-    const marker = L.circleMarker([loc.lat, loc.lng], {
-      radius: 8,
-      fillColor: cfg.color,
-      color: '#fff',
-      weight: 2,
-      fillOpacity: 0.85,
-    });
-
-    const badge = `<span class="type-badge" style="background:${cfg.color}">${cfg.label}</span>`;
-    const webLink = loc.website
-      ? `<br/><a href="${loc.website}" target="_blank" rel="noopener">Website →</a>`
-      : '';
-
-    marker.bindPopup(`
-      <h3>${loc.name}</h3>
-      ${badge}
-      <p>${loc.description}</p>
-      <small>${loc.address}${webLink}</small>
-    `);
-
-    marker._locData = loc;
-    marker._type = loc.type;
-    layerGroups[loc.type].addLayer(marker);
-    markers.push(marker);
-  });
-
-  updateCount();
+function buildFilterUI() {
+  const container = document.querySelector('.filter-group');
+  for (const [type, cfg] of Object.entries(TYPE_CONFIG)) {
+    const label = document.createElement('label');
+    label.innerHTML = `
+      <input type="checkbox" class="filter-cb" data-type="${type}" checked />
+      <span class="color-dot" style="background:${cfg.color}"></span>
+      ${FILTER_LABELS[type]}
+    `;
+    container.appendChild(label);
+  }
 
   document.querySelectorAll('.filter-cb').forEach((cb) => {
     cb.addEventListener('change', () => {
@@ -67,13 +52,54 @@ async function init() {
   document.getElementById('search').addEventListener('input', applySearch);
 }
 
+async function init() {
+  try {
+    const res = await fetch('locations.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const locations = await res.json();
+
+    locations.forEach((loc) => {
+      const cfg = TYPE_CONFIG[loc.type];
+      const marker = L.circleMarker([loc.lat, loc.lng], {
+        radius: 8,
+        fillColor: cfg.color,
+        color: '#fff',
+        weight: 2,
+        fillOpacity: 0.85,
+      });
+
+      const badge = `<span class="type-badge" style="background:${cfg.color}">${cfg.label}</span>`;
+      const webLink = loc.website
+        ? `<br/><a href="${loc.website}" target="_blank" rel="noopener">Website →</a>`
+        : '';
+
+      marker.bindPopup(`
+        <h3>${loc.name}</h3>
+        ${badge}
+        <p>${loc.description}</p>
+        <small>${loc.address}${webLink}</small>
+      `);
+
+      marker.locData = loc;
+      marker.type = loc.type;
+      layerGroups[loc.type].addLayer(marker);
+      markers.push(marker);
+    });
+
+    updateCount();
+  } catch (err) {
+    document.getElementById('total-count').textContent = 'Failed to load locations';
+    console.error('Failed to load locations:', err);
+  }
+}
+
 function applySearch() {
   const q = document.getElementById('search').value.trim().toLowerCase();
 
   markers.forEach((m) => {
-    const typeGroup = layerGroups[m._type];
+    const typeGroup = layerGroups[m.type];
     const onMap = map.hasLayer(typeGroup);
-    const matches = !q || m._locData.name.toLowerCase().includes(q);
+    const matches = !q || m.locData.name.toLowerCase().includes(q);
 
     if (onMap && matches) {
       if (!map.hasLayer(m)) typeGroup.addLayer(m);
@@ -88,10 +114,11 @@ function applySearch() {
 function updateCount() {
   let visible = 0;
   markers.forEach((m) => {
-    const tg = layerGroups[m._type];
+    const tg = layerGroups[m.type];
     if (map.hasLayer(tg) && tg.hasLayer(m)) visible++;
   });
-  document.getElementById('total-count').textContent = visible;
+  document.getElementById('total-count').textContent = `${visible} locations shown`;
 }
 
+buildFilterUI();
 init();

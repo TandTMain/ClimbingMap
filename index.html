@@ -29,7 +29,7 @@
       color: #222;
     }
 
-    .sidebar input[type="text"] {
+    .sidebar input[type="search"] {
       width: 100%;
       padding: 8px 10px;
       border: 1px solid #ccc;
@@ -39,7 +39,7 @@
       outline: none;
     }
 
-    .sidebar input[type="text"]:focus {
+    .sidebar input[type="search"]:focus {
       border-color: #3388ff;
     }
 
@@ -103,14 +103,9 @@
 <body>
   <div class="sidebar">
     <h2>Hungarian Climbing Map</h2>
-    <input type="text" id="search" placeholder="Search locations..." />
-    <div class="filter-group">
-      <label><input type="checkbox" class="filter-cb" data-type="via-ferrata" checked /><span class="color-dot" style="background:#e74c3c"></span> Via Ferrata</label>
-      <label><input type="checkbox" class="filter-cb" data-type="gym" checked /><span class="color-dot" style="background:#3498db"></span> Climbing Gyms</label>
-      <label><input type="checkbox" class="filter-cb" data-type="boulder" checked /><span class="color-dot" style="background:#2ecc71"></span> Outdoor Boulders</label>
-      <label><input type="checkbox" class="filter-cb" data-type="wall" checked /><span class="color-dot" style="background:#e67e22"></span> Outdoor Walls</label>
-    </div>
-    <div class="legend"><strong>Total:</strong> <span id="total-count">0</span> locations shown</div>
+    <input type="search" id="search" placeholder="Search locations..." />
+    <div class="filter-group"></div>
+    <div class="legend"><strong>Total:</strong> <span id="total-count">Loading...</span></div>
   </div>
   <div id="map"></div>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
