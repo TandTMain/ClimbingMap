@@ -118,11 +118,11 @@
   },
   {
     "name": "IBEX Sport Győr",
-    "lat": 47.6820,
-    "lng": 17.6420,
+    "lat": 47.68666,
+    "lng": 17.66291,
     "type": "gym",
     "description": "Largest climbing gym in Transdanubia with 750 m² and 500 m² of climbing surface.",
-    "address": "Győr",
+    "address": "9027 Győr, Puskás Tivadar u. 8.",
     "website": "https://ibexsport.hu"
   },
   {
@@ -145,47 +145,47 @@
   },
   {
     "name": "Torony Climbing Gym",
-    "lat": 47.6780,
-    "lng": 17.6380,
+    "lat": 47.68612,
+    "lng": 17.65903,
     "type": "gym",
     "description": "Győr's first rope climbing gym, opened in 2025 with modern climbing walls for all levels.",
-    "address": "Győr",
+    "address": "9028 Győr, Bútorgyári utca 5.",
     "website": "https://toronyclimbing.hu"
   },
   {
     "name": "Climberry Boulder",
-    "lat": 47.5050,
-    "lng": 19.0800,
+    "lat": 47.47858,
+    "lng": 19.02895,
     "type": "gym",
-    "description": "Modern bouldering center in Budapest with regularly changing routes.",
-    "address": "Budapest",
-    "website": ""
+    "description": "Child development climbing center focused on skill-building through bouldering.",
+    "address": "1112 Budapest, Bocskai út 77-79.",
+    "website": "https://climberry.hu"
   },
   {
     "name": "MAG47 Climb & Cafe",
-    "lat": 47.4600,
-    "lng": 19.1000,
+    "lat": 47.48214,
+    "lng": 19.15681,
     "type": "gym",
-    "description": "Unique gym offering all three climbing disciplines: lead, boulder, and speed climbing.",
-    "address": "Budapest",
-    "website": ""
+    "description": "Hungary's largest climbing facility (2300 m²) with 17m walls, lead, boulder, and speed climbing.",
+    "address": "1106 Budapest, Kada utca 144.",
+    "website": "https://mag47.hu"
   },
   {
     "name": "Veszprém University Climbing Club",
-    "lat": 47.0950,
-    "lng": 17.9150,
+    "lat": 47.08861,
+    "lng": 17.90806,
     "type": "gym",
     "description": "Climbing gym at the Pannon University with rope and bouldering routes.",
-    "address": "Veszprém, Pannon Egyetem",
+    "address": "8200 Veszprém, Egyetem utca 10.",
     "website": ""
   },
   {
     "name": "UniFit Boulder Debrecen",
-    "lat": 47.5300,
-    "lng": 21.6300,
+    "lat": 47.5539,
+    "lng": 21.6333,
     "type": "gym",
-    "description": "250 m² bouldering gym in Debrecen's UniFit fitness center.",
-    "address": "Debrecen, Stadion Unifit",
+    "description": "250 m² bouldering gym inside the UniFit fitness center at Nagyerdei Stadium.",
+    "address": "4032 Debrecen, Nagyerdei park 12.",
     "website": "https://www.stadionunifit.hu"
   },
   {
