@@ -69,8 +69,11 @@ async function init() {
       });
 
       const badge = `<span class="type-badge" style="background:${cfg.color}">${cfg.label}</span>`;
+      const diffHtml = loc.difficulty
+        ? `<span class="diff-badge">${loc.difficulty}</span>`
+        : '';
       const webLink = loc.website
-        ? `<br/><a href="${loc.website}" target="_blank" rel="noopener">Website →</a>`
+        ? `<a href="${loc.website}" target="_blank" rel="noopener" class="popup-link">Website →</a>`
         : '';
       const imgHtml = loc.image
         ? `<img src="${loc.image}" alt="${loc.name}" class="popup-img" />`
@@ -79,9 +82,9 @@ async function init() {
       const basePopup = `
         ${imgHtml}
         <h3>${loc.name}</h3>
-        ${badge}
-        <p>${loc.description}</p>
-        <small>${loc.address}${webLink}</small>
+        <div class="popup-badges">${badge}${diffHtml}</div>
+        <p class="popup-desc">${loc.description}</p>
+        <div class="popup-footer"><small>${loc.address}</small>${webLink}</div>
       `;
 
       marker.bindPopup(basePopup);
@@ -96,8 +99,13 @@ async function init() {
           const emoji = weatherEmoji(c.weather_code);
           const desc = WMO_CODES[c.weather_code] || 'Unknown';
           marker.setPopupContent(basePopup + `
-            <hr style="margin:8px 0;border:none;border-top:1px solid #eee"/>
-            <small>${emoji} ${Math.round(c.temperature_2m)}°C (feels ${Math.round(c.apparent_temperature)}°C) &middot; ${desc}<br/>Wind: ${Math.round(c.wind_speed_10m)} km/h</small>
+            <div class="popup-weather">
+              <span class="popup-weather-icon">${emoji}</span>
+              <span class="popup-weather-temp">${Math.round(c.temperature_2m)}°C</span>
+              <span class="popup-weather-detail">feels ${Math.round(c.apparent_temperature)}°C</span>
+              <span class="popup-weather-detail">· ${desc}</span>
+              <br/><span class="popup-weather-detail">Wind: ${Math.round(c.wind_speed_10m)} km/h</span>
+            </div>
           `);
         } catch (err) {
           console.error('Failed to fetch weather for', loc.name, err);
