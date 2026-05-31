@@ -6,7 +6,8 @@
     "type": "via-ferrata",
     "description": "Hungary's first via ferrata (2013) with 5 routes (B–F difficulty) in the Kőmosó valley below Csesznek Castle.",
     "address": "Csesznek, Bakony Mountains",
-    "website": "https://csesznek.kornyeke.hu/en/via-ferrata-csesznek"
+    "website": "https://csesznek.kornyeke.hu/en/via-ferrata-csesznek",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%BAdol%C3%AD_K%C5%91mos%C3%B3_szurdok_je_n%C4%9Bkolik_ferrat.jpg"
   },
   {
     "name": "Mór Via Ferrata",
@@ -15,43 +16,48 @@
     "type": "via-ferrata",
     "description": "3 routes (B–D) in a former quarry between Mór and Csókakő, with two Vietnam-style suspension bridges.",
     "address": "Mór, Vértes Mountains",
-    "website": "https://www.termeszetjaro.hu/en/poi/via-ferrata-trails/mori-via-ferrata/808747893/"
+    "website": "https://www.termeszetjaro.hu/en/poi/via-ferrata-trails/mori-via-ferrata/808747893/",
+    "image": ""
   },
   {
     "name": "Tatabánya Via Ferrata",
     "lat": 47.5695,
-    "lng": 18.4120,
+    "lng": 18.412,
     "type": "via-ferrata",
     "description": "Via ferrata routes in the scenic Kőhegy park with multiple difficulty levels and picnic areas.",
     "address": "Tatabánya, Kőhegy",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Esztramos Nagy-fal Via Ferrata",
     "lat": 48.4385,
-    "lng": 20.7320,
+    "lng": 20.732,
     "type": "via-ferrata",
     "description": "6 routes (B–E) on the Great Wall of Esztramos Hill, including the challenging Babel route with a rope bridge.",
     "address": "Esztramos Hill, Borsod-Abaúj-Zemplén",
-    "website": "https://en.vasaltutakesztramoson.hu/via-ferratas-of-nagy-fal-great-wall"
+    "website": "https://en.vasaltutakesztramoson.hu/via-ferratas-of-nagy-fal-great-wall",
+    "image": ""
   },
   {
     "name": "Tengerszem Via Ferrata (Édes Vizi Élet)",
     "lat": 48.3379,
-    "lng": 21.5800,
+    "lng": 21.58,
     "type": "via-ferrata",
     "description": "D-level route with bridges over an artificial lake in a former quarry. Part of the Megyer-hegy via ferrata complex.",
     "address": "Megyer-hegy, Borsod-Abaúj-Zemplén",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Cuha-völgy Via Ferrata",
-    "lat": 47.3120,
-    "lng": 17.9270,
+    "lat": 47.312,
+    "lng": 17.927,
     "type": "via-ferrata",
     "description": "Via ferrata routes in the scenic Cuha Valley of the Bakony Mountains.",
     "address": "Cuha-völgy, Bakony Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Spider Club",
@@ -60,7 +66,8 @@
     "type": "gym",
     "description": "Hungary's largest indoor climbing hall with 1360 m² of walls, top rope, lead climbing, and a boulder hall.",
     "address": "1036 Budapest, Fényes Adolf u. 19-21.",
-    "website": "https://www.spiderclub.hu"
+    "website": "https://www.spiderclub.hu",
+    "image": ""
   },
   {
     "name": "Monkey Boulder",
@@ -69,7 +76,8 @@
     "type": "gym",
     "description": "800 m² bouldering gym with 100+ routes, 25 large elements, campus board, and fingerboard training area.",
     "address": "1033 Budapest, Szentendrei út 89-95. (PP Center, csarnok 53)",
-    "website": "https://monkeyboulder.hu"
+    "website": "https://monkeyboulder.hu",
+    "image": ""
   },
   {
     "name": "Boulder Academy Budapest (BAB)",
@@ -78,7 +86,8 @@
     "type": "gym",
     "description": "One of Hungary's largest climbing halls with 200+ routes and 650 m² of wall surface in the Lurdy Ház.",
     "address": "1097 Budapest, Könyves Kálmán körút 12-14. (Lurdy Ház)",
-    "website": "https://www.boulderacademy.hu"
+    "website": "https://www.boulderacademy.hu",
+    "image": ""
   },
   {
     "name": "Mountex Boulder",
@@ -87,7 +96,8 @@
     "type": "gym",
     "description": "Hungary's first bouldering gym (since 2002), centrally located near Lehel tér with 100+ routes.",
     "address": "1134 Budapest, Váci út 19.",
-    "website": "https://old.mountex.hu/boulder-eng"
+    "website": "https://old.mountex.hu/boulder-eng",
+    "image": ""
   },
   {
     "name": "Gravity Boulder Bar",
@@ -96,7 +106,8 @@
     "type": "gym",
     "description": "Modern boulder gym located in Mammut 1 shopping center with unique boulder bar concept.",
     "address": "1024 Budapest, Lövőház u. 2-6. (Mammut 1, 3rd floor)",
-    "website": "https://gravitybudapest.com"
+    "website": "https://gravitybudapest.com",
+    "image": ""
   },
   {
     "name": "Flow Boulder",
@@ -105,7 +116,8 @@
     "type": "gym",
     "description": "1200 m² sunny bouldering gym in Újbuda with 100+ boulders and 10 trainers. New routes every week.",
     "address": "1117 Budapest, Hengermalom út 19-21. (Újbuda Center)",
-    "website": "https://www.flowboulder.hu"
+    "website": "https://www.flowboulder.hu",
+    "image": ""
   },
   {
     "name": "MŰFAL",
@@ -114,7 +126,8 @@
     "type": "gym",
     "description": "Budapest's oldest rope climbing gym with boulder wall too, located at BME Sportközpont since 2012.",
     "address": "1111 Budapest, Műegyetem rkp. 3. (BME Sportközpont)",
-    "website": "https://www.mufal.hu"
+    "website": "https://www.mufal.hu",
+    "image": ""
   },
   {
     "name": "IBEX Sport Győr",
@@ -123,7 +136,8 @@
     "type": "gym",
     "description": "Largest climbing gym in Transdanubia with 750 m² and 500 m² of climbing surface.",
     "address": "9027 Győr, Puskás Tivadar u. 8.",
-    "website": "https://ibexsport.hu"
+    "website": "https://ibexsport.hu",
+    "image": ""
   },
   {
     "name": "BETA Climbing Pécs",
@@ -132,7 +146,8 @@
     "type": "gym",
     "description": "Largest climbing gym in South Transdanubia with top rope and bouldering walls.",
     "address": "7626 Pécs, Búza tér 6/b (Pécsi Sasok Mozgásközpont)",
-    "website": "https://www.falmaszaspecs.hu"
+    "website": "https://www.falmaszaspecs.hu",
+    "image": ""
   },
   {
     "name": "Factory Aréna Miskolc",
@@ -141,7 +156,8 @@
     "type": "gym",
     "description": "Hungary's 2nd largest indoor climbing hall with 400 m² walls, 10m high, with bouldering area.",
     "address": "Miskolc, Ó-gyár tér 1.",
-    "website": "https://factoryarena.hu"
+    "website": "https://factoryarena.hu",
+    "image": ""
   },
   {
     "name": "Torony Climbing Gym",
@@ -150,7 +166,8 @@
     "type": "gym",
     "description": "Győr's first rope climbing gym, opened in 2025 with modern climbing walls for all levels.",
     "address": "9028 Győr, Bútorgyári utca 5.",
-    "website": "https://toronyclimbing.hu"
+    "website": "https://toronyclimbing.hu",
+    "image": ""
   },
   {
     "name": "Climberry Boulder",
@@ -159,7 +176,8 @@
     "type": "gym",
     "description": "Child development climbing center focused on skill-building through bouldering.",
     "address": "1112 Budapest, Bocskai út 77-79.",
-    "website": "https://climberry.hu"
+    "website": "https://climberry.hu",
+    "image": ""
   },
   {
     "name": "MAG47 Climb & Cafe",
@@ -168,7 +186,8 @@
     "type": "gym",
     "description": "Hungary's largest climbing facility (2300 m²) with 17m walls, lead, boulder, and speed climbing.",
     "address": "1106 Budapest, Kada utca 144.",
-    "website": "https://mag47.hu"
+    "website": "https://mag47.hu",
+    "image": ""
   },
   {
     "name": "Veszprém University Climbing Club",
@@ -177,7 +196,8 @@
     "type": "gym",
     "description": "Climbing gym at the Pannon University with rope and bouldering routes.",
     "address": "8200 Veszprém, Egyetem utca 10.",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "UniFit Boulder Debrecen",
@@ -186,7 +206,8 @@
     "type": "gym",
     "description": "250 m² bouldering gym inside the UniFit fitness center at Nagyerdei Stadium.",
     "address": "4032 Debrecen, Nagyerdei park 12.",
-    "website": "https://www.stadionunifit.hu"
+    "website": "https://www.stadionunifit.hu",
+    "image": ""
   },
   {
     "name": "Oroszlán-sziklák",
@@ -195,7 +216,8 @@
     "type": "boulder",
     "description": "Natural limestone boulders on Kecske-hegy's south side with 68+ problems from easy to highball. Known as Lion Boulders.",
     "address": "Budapest II., Kecske-hegy",
-    "website": "https://www.thecrag.com/en/climbing/hungary/budapest/area/4701577743"
+    "website": "https://www.thecrag.com/en/climbing/hungary/budapest/area/4701577743",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Budapest_II.,_Oroszl%C3%A1n-szikla.jpg"
   },
   {
     "name": "Tündér-szikla / Manóvár",
@@ -204,195 +226,217 @@
     "type": "boulder",
     "description": "Dolomite boulders near Tündér-hegy peak with problems graded VII+ to X- (UIAA). Popular secluded spot.",
     "address": "Budapest XII., Zugliget",
-    "website": "https://www.mountainproject.com/area/106756120/tunder-szikla"
+    "website": "https://www.mountainproject.com/area/106756120/tunder-szikla",
+    "image": ""
   },
   {
     "name": "Róka-hegyi kőfejtő",
-    "lat": 47.5800,
-    "lng": 19.0150,
+    "lat": 47.58,
+    "lng": 19.015,
     "type": "wall",
     "description": "Popular climbing crag in a former quarry in Budapest with many sport routes across various grades.",
     "address": "Budapest III., Róka-hegy",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Kecske-hegyi kőfejtő",
-    "lat": 47.5430,
+    "lat": 47.543,
     "lng": 18.9916,
     "type": "wall",
     "description": "Historic climbing quarry where Hungarian sport climbing was born in the 1980s. Overhanging routes up to grade 10.",
     "address": "Budapest II., Kecske-hegy",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Bajót (Nagy-fal)",
-    "lat": 47.7260,
-    "lng": 18.3750,
+    "lat": 47.726,
+    "lng": 18.375,
     "type": "wall",
     "description": "Major climbing area in Gerecse with many sport routes on limestone. Includes Nagy-fal, Hátsó-fal, and Szívek-fala.",
     "address": "Bajót, Gerecse Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Kis-Gerecsei kőfejtő",
-    "lat": 47.7000,
-    "lng": 18.4000,
+    "lat": 47.7,
+    "lng": 18.4,
     "type": "wall",
     "description": "Quarry crag in Gerecse with a variety of sport climbing routes.",
     "address": "Kis-Gerecse, Gerecse Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Cuha-völgy",
-    "lat": 47.3110,
+    "lat": 47.311,
     "lng": 17.9275,
     "type": "wall",
     "description": "Scenic climbing valley in Bakony with multiple crags and sport routes in a forested gorge.",
     "address": "Cuha-völgy, Bakony Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Bajdázói-kőfejtő (Királyrét)",
-    "lat": 47.9050,
-    "lng": 18.9900,
+    "lat": 47.905,
+    "lng": 18.99,
     "type": "wall",
     "description": "Hungary's newest climbing crag (2020) in Börzsöny with 10–13m volcanic tuff walls in vibrant yellow-red colors.",
     "address": "Királyrét, Börzsöny Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Bárány-kő",
-    "lat": 47.8800,
-    "lng": 19.9500,
+    "lat": 47.88,
+    "lng": 19.95,
     "type": "wall",
     "description": "Andesite crag in Mátra known for its scenic towers and sport routes.",
     "address": "Mátra Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Dédesi Kisvár",
-    "lat": 48.1700,
-    "lng": 20.4800,
+    "lat": 48.17,
+    "lng": 20.48,
     "type": "wall",
     "description": "Limestone crag in Bükk with sport climbing routes in a remote forest setting.",
     "address": "Dédes, Bükk Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Hámor (Nagy-fal & Kis-fal)",
-    "lat": 48.0970,
-    "lng": 20.6440,
+    "lat": 48.097,
+    "lng": 20.644,
     "type": "wall",
     "description": "Major Bükk climbing area with two main walls. Nagy-fal is a large overhanging cliff, Kis-fal offers easier routes.",
     "address": "Hámor, Bükk Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Örvény-kő",
-    "lat": 48.1000,
-    "lng": 20.6500,
+    "lat": 48.1,
+    "lng": 20.65,
     "type": "wall",
     "description": "Limestone crag in the Bükk with technical climbing on good rock.",
     "address": "Bükk Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Köpüs-kő",
-    "lat": 48.1150,
-    "lng": 20.6300,
+    "lat": 48.115,
+    "lng": 20.63,
     "type": "wall",
     "description": "Protected climbing park in Bükk with massive overhanging limestone conglomerate walls (climbing only Nov–Jan).",
     "address": "Bükk Mountains",
-    "website": "https://hszjse.hu/kopus-ko/"
+    "website": "https://hszjse.hu/kopus-ko/",
+    "image": ""
   },
   {
     "name": "Sólyom-kő",
-    "lat": 48.4900,
-    "lng": 21.4300,
+    "lat": 48.49,
+    "lng": 21.43,
     "type": "wall",
     "description": "Andesite crag in Zemplén with beautiful tower formations and sport routes.",
     "address": "Zemplén Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Várgesztes",
-    "lat": 47.4750,
-    "lng": 18.3900,
+    "lat": 47.475,
+    "lng": 18.39,
     "type": "wall",
     "description": "Popular Vértes climbing crag under castle ruins with multiple sport routes.",
     "address": "Várgesztes, Vértes Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Turul-sziklák",
-    "lat": 47.7000,
-    "lng": 18.3600,
+    "lat": 47.7,
+    "lng": 18.36,
     "type": "wall",
     "description": "Limestone crags in Gerecse with scenic views and sport climbing routes.",
     "address": "Gerecse Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Tardosbánya",
-    "lat": 47.6600,
-    "lng": 18.4200,
+    "lat": 47.66,
+    "lng": 18.42,
     "type": "wall",
     "description": "Limestone quarry crag in Gerecse with a wide variety of sport routes.",
     "address": "Tardos, Gerecse Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Pázmándi-sziklák",
-    "lat": 47.2900,
-    "lng": 18.6600,
+    "lat": 47.29,
+    "lng": 18.66,
     "type": "wall",
     "description": "Granite-like climbing crags in the Velence Hills with bouldering and sport routes.",
     "address": "Pázmánd, Velencei-hegység",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Oszoly (Csobánka)",
-    "lat": 47.6400,
-    "lng": 18.9600,
+    "lat": 47.64,
+    "lng": 18.96,
     "type": "wall",
     "description": "Limestone crag in Pilis with many sport routes, popular for its proximity to Budapest.",
     "address": "Csobánka, Pilis Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Betekints-völgy",
-    "lat": 47.2450,
-    "lng": 17.8600,
+    "lat": 47.245,
+    "lng": 17.86,
     "type": "wall",
     "description": "Bakony valley crag with sport routes in a quiet forested area.",
     "address": "Betekints-völgy, Bakony Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Felsőtárkány",
-    "lat": 47.9750,
-    "lng": 20.4200,
+    "lat": 47.975,
+    "lng": 20.42,
     "type": "wall",
     "description": "Bükk climbing area with routes on limestone in a scenic valley setting.",
     "address": "Felsőtárkány, Bükk Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Csókakő",
-    "lat": 47.3650,
-    "lng": 18.2150,
+    "lat": 47.365,
+    "lng": 18.215,
     "type": "wall",
     "description": "Climbing crag near Csókakő castle ruins in the Vértes with sport routes.",
     "address": "Csókakő, Vértes Mountains",
-    "website": ""
+    "website": "",
+    "image": ""
   },
   {
     "name": "Balatonederics",
-    "lat": 46.7950,
-    "lng": 17.3800,
+    "lat": 46.795,
+    "lng": 17.38,
     "type": "wall",
     "description": "Limestone crag overlooking Lake Balaton with sport climbing routes.",
     "address": "Balatonederics, Balaton-felvidék",
-    "website": ""
+    "website": "",
+    "image": ""
   }
 ]

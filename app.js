@@ -72,8 +72,12 @@ async function init() {
       const webLink = loc.website
         ? `<br/><a href="${loc.website}" target="_blank" rel="noopener">Website →</a>`
         : '';
+      const imgHtml = loc.image
+        ? `<img src="${loc.image}" alt="${loc.name}" class="popup-img" />`
+        : '';
 
       const basePopup = `
+        ${imgHtml}
         <h3>${loc.name}</h3>
         ${badge}
         <p>${loc.description}</p>
