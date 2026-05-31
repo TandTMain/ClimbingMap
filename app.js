@@ -73,12 +73,32 @@ async function init() {
         ? `<br/><a href="${loc.website}" target="_blank" rel="noopener">Website →</a>`
         : '';
 
-      marker.bindPopup(`
+      const basePopup = `
         <h3>${loc.name}</h3>
         ${badge}
         <p>${loc.description}</p>
         <small>${loc.address}${webLink}</small>
-      `);
+      `;
+
+      marker.bindPopup(basePopup);
+
+      marker.on('click', async () => {
+        try {
+          const url = `https://api.open-meteo.com/v1/forecast?latitude=${loc.lat}&longitude=${loc.lng}&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m&timezone=auto`;
+          const res = await fetch(url);
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          const data = await res.json();
+          const c = data.current;
+          const emoji = weatherEmoji(c.weather_code);
+          const desc = WMO_CODES[c.weather_code] || 'Unknown';
+          marker.setPopupContent(basePopup + `
+            <hr style="margin:8px 0;border:none;border-top:1px solid #eee"/>
+            <small>${emoji} ${Math.round(c.temperature_2m)}°C (feels ${Math.round(c.apparent_temperature)}°C) &middot; ${desc}<br/>Wind: ${Math.round(c.wind_speed_10m)} km/h</small>
+          `);
+        } catch (err) {
+          console.error('Failed to fetch weather for', loc.name, err);
+        }
+      });
 
       marker.locData = loc;
       marker.type = loc.type;
@@ -120,5 +140,60 @@ function updateCount() {
   document.getElementById('total-count').textContent = `${visible} locations shown`;
 }
 
+function weatherEmoji(code) {
+  if (code === 0) return '☀️';
+  if (code === 1) return '🌤️';
+  if (code === 2) return '⛅';
+  if (code === 3) return '☁️';
+  if (code >= 45 && code <= 48) return '🌫️';
+  if (code >= 51 && code <= 57) return '🌦️';
+  if (code >= 61 && code <= 67) return '🌧️';
+  if (code >= 71 && code <= 77) return '❄️';
+  if (code >= 80 && code <= 82) return '🌧️';
+  if (code >= 85 && code <= 86) return '🌨️';
+  if (code >= 95) return '⛈️';
+  return '';
+}
+
+const WMO_CODES = {
+  0: 'Clear', 1: 'Mostly clear', 2: 'Partly cloudy', 3: 'Overcast',
+  45: 'Foggy', 48: 'Depositing rime fog',
+  51: 'Light drizzle', 53: 'Moderate drizzle', 55: 'Dense drizzle',
+  56: 'Light freezing drizzle', 57: 'Dense freezing drizzle',
+  61: 'Slight rain', 63: 'Moderate rain', 65: 'Heavy rain',
+  66: 'Light freezing rain', 67: 'Heavy freezing rain',
+  71: 'Slight snow', 73: 'Moderate snow', 75: 'Heavy snow', 77: 'Snow grains',
+  80: 'Slight rain showers', 81: 'Moderate rain showers', 82: 'Violent rain showers',
+  85: 'Slight snow showers', 86: 'Heavy snow showers',
+  95: 'Thunderstorm', 96: 'Thunderstorm with slight hail', 99: 'Thunderstorm with heavy hail',
+};
+
+async function fetchWeather(lat, lng) {
+  const el = document.getElementById('weather-info');
+  try {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m&timezone=auto`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    const c = data.current;
+    const emoji = weatherEmoji(c.weather_code);
+    const desc = WMO_CODES[c.weather_code] || 'Unknown';
+    el.innerHTML = `${emoji} ${Math.round(c.temperature_2m)}&deg;C (feels ${Math.round(c.apparent_temperature)}&deg;C) &mdash; ${desc}<br/>Humidity: ${c.relative_humidity_2m}% &middot; Wind: ${Math.round(c.wind_speed_10m)} km/h`;
+  } catch (err) {
+    el.textContent = 'Weather unavailable';
+    console.error('Failed to fetch weather:', err);
+  }
+}
+
+let weatherTimer;
+map.on('moveend', () => {
+  clearTimeout(weatherTimer);
+  weatherTimer = setTimeout(() => {
+    const c = map.getCenter();
+    fetchWeather(c.lat, c.lng);
+  }, 1500);
+});
+
+fetchWeather(47.16, 19.50);
 buildFilterUI();
 init();
